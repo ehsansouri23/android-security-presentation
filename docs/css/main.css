@@ -16,13 +16,13 @@ body {
     font-family: iranYekan !important;
 }
 
-img {
-    width: 100%;
-}
-
 i {
     margin-right: 20px;
     margin-left: 20px;
+}
+
+section div {
+    margin-top: 2rem;
 }
 
 .index {
@@ -37,4 +37,12 @@ i {
 .active {
     color: black;
     font-size: 3rem;
+}
+
+.vertical-line {
+    border-left: 6px solid #76D7C4;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
 }
