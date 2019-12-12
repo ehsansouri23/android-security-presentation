@@ -1,0 +1,40 @@
+.slides {
+    direction: rtl;
+}
+
+@font-face {
+    font-family: iranYekan;
+    src: url('../assets/fonts/iranyekanwebregular.ttf');
+}
+
+@font-face {
+    font-family: iranYekanBold;
+    src: url('../assets/fonts/iranyekanwebbold.ttf');
+}
+
+body {
+    font-family: iranYekan !important;
+}
+
+img {
+    width: 100%;
+}
+
+i {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.index {
+    text-align: start;
+    font-size: 2rem;
+}
+
+.index .item {
+    margin-top: 3rem;
+}
+
+.active {
+    color: black;
+    font-size: 3rem;
+}

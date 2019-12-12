@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/reveal.scss">
+    <link rel="stylesheet" href="css/theme/league.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/be6b786878.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="intro">
+                <img src="assets/name-of-god.jpg" style="height: 350px;">
+                <h3 class="fragment">امنیت در اندروید</h3>
+                <h4 class="fragment">احسان سوری</h4>
+
+                <div class="fragment">
+                    <h4>استاد راهنما</h4>
+                    <h4>دکتر صفابخش</h4>
+                </div>
+            </section>
+            <section id="index" data-state="center" data-background-color="#76D7C4">
+                <div class="index">
+                    <h3>فهرست</h3>
+                    <div class="item"><i class="far fa-circle"></i>مقدمه و تاریخچه اندروید</div>
+                    <div class="item"><i class="far fa-circle"></i>ساختار اندروید</div>
+                </div>
+            </section>
+
+            <section data-state="center" data-background-color="#76D7C4">
+                <section>
+                    <div class="index">
+                        <h3>فهرست</h3>
+                        <div class="item active"><i class="far fa-circle"></i>مقدمه و تاریخچه اندروید</div>
+                        <div class="item"><i class="fas fa-circle"></i>ساختار اندروید</div>
+                    </div>
+                </section>
+                <section id="android-history" data-background-image="assets/android-history.jpg" data-background-opacity="0.45" data-state="center">
+                    <div style="position: relative;">
+                        <h3>تاریخچه اندروید</h3>
+                        <p class="fragment">تولید شده توسط Andy Rubin در سال 2003</p>
+                        <p class="fragment">در ابتدا سیستم عامل دوربین های عکاسی</p>
+                        <p class="fragment">در سال 2007 گوگل رسما سیستم عامل اندروید برای گوشی های موبایل را معرفی کرد</p>
+                        <p class="fragment">سال htc 2008 اولین موبایل با اندروید 1 را روانه بازار کرد.</p>
+                    </div>
+                </section>
+                <section data-background-image="assets/android-history.jpg" data-background-opacity="0.45" data-state="center">
+                    <img src="assets/htc-dream.jpg" style="margin: auto; width: 70%;">
+                </section>
+            </section>
+
+            <section data-state="center">
+                <section data-background-color="#76D7C4">
+                    <div class="index">
+                        <h3>فهرست</h3>
+                        <div class="item"><i class="far fa-circle"></i>مقدمه و تاریخچه اندروید</div>
+                        <div class="item active"><i class="fas fa-circle"></i>ساختار اندروید</div>
+                    </div>
+                </section>
+                <section data-background-image="assets/layer.png" data-background-opacity="0.45" data-state="center">
+                    <h3>اندروید ساختاری لایه ای دارد</h3>
+                    <ol style="direction: ltr;">
+                        <li>Linux kernel</li>
+                        <li>Hardware abstraction layer (HAL)</li>
+                        <li>Android run time</li>
+                        <li>Native libraries</li>
+                        <li>Android framework</li>
+                        <li>System applications</li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Linux kernel</h2>
+                    <h3 class="fragment">پایین ترین لایه است</h3>
+                    <div class="fragment">اندروید بر روی کرنل لینوکس ساخته شده است. کرنل وظیفه مدیریت </div>
+                    <span class="fragment fade-up">مدیریت حافظه</span>
+                    <span class="fragment fade-down">،مدیریت پروسس ها</span>
+                    <span class="fragment">،بخشی از امنیت دستگاه</span>
+                    <span class="fragment"> ،ترد ها ...</span>
+                    <div class="fragment">را بر عهده دارد</div>
+                </section>
+                <section>
+                    <h2>Hardware abstraction layer (HAL)</h2>
+                    <div class="fragment">حاوی کتابخانه هایی برای ارتباط با سخت افزار است</div>
+                </section>
+                <section>
+                    <h2>Android Run Time</h2>
+                    <div class="fragment">حاوی کتابخانه هایی برای ارتباط با سخت افزار است</div>
+                </section>
+                <section>
+                    <h2>Native libraries</h2>
+                    <div class="fragment">حاوی کد های المان های اصلی اندروید مثل پخش صدا و ویدیو است</div>
+                </section>
+                <section>
+                    <h2>Android framework</h2>
+                    <div class="fragment">بخش اصلی کد هایی که توسعه دهندگان اپلیکیشن با آنها سر و کار دارند در این لایه است. Api هایی به زبان java که خود اینها از کتابخانه و کد های لایه پایین تر(Native libraries) استفاده میکند.</div>
+                </section>
+                <section>
+                    <img src="assets/android-layer.png" style="height: 900px; width: auto;"> </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            history: true,
+            controls: true,
+            slideNumber: true,
+            navigationMode: 'grid',
+            width: "100%",
+            height: "100%",
+            margin: 0.05,
+            minScale: 0.2,
+            maxScale: 1.5,
+            center: true,
+
+        });
+
+        Reveal.addEventListener('notCenter', function() {
+            Reveal.configure({
+                center: false
+            });
+        }, false);
+    </script>
+</body>
+
+</html>
