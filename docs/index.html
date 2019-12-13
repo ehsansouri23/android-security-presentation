@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="css/theme/league.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/be6b786878.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 </head>
 
 <body>
@@ -31,6 +40,8 @@
                     <div class="item"><i class="far fa-circle"></i>مقدمه و تاریخچه اندروید</div>
                     <div class="item"><i class="far fa-circle"></i>ساختار اندروید</div>
                     <div class="item"><i class="far fa-circle"></i>المان های اندروید</div>
+                    <div class="item"><i class="far fa-circle"></i>مکانیزم های امنیتی اندروید</div>
+
                 </div>
             </section>
 
@@ -41,6 +52,7 @@
                         <div class="item active"><i class="fas fa-circle"></i>مقدمه و تاریخچه اندروید</div>
                         <div class="item"><i class="far fa-circle"></i>ساختار اندروید</div>
                         <div class="item"><i class="far fa-circle"></i>المان های اندروید</div>
+                        <div class="item"><i class="far fa-circle"></i>مکانیزم های امنیتی اندروید</div>
                     </div>
                 </section>
                 <section id="android-history" data-background-image="assets/android-history.jpg" data-background-opacity="0.45" data-state="center">
@@ -64,6 +76,7 @@
                         <div class="item"><i class="far fa-circle"></i>مقدمه و تاریخچه اندروید</div>
                         <div class="item active"><i class="fas fa-circle"></i>ساختار اندروید</div>
                         <div class="item"><i class="far fa-circle"></i>المان های اندروید</div>
+                        <div class="item"><i class="far fa-circle"></i>مکانیزم های امنیتی اندروید</div>
                     </div>
                 </section>
                 <section data-background-image="assets/layer.png" data-background-size="75%" data-background-opacity="0.45" data-state="center">
@@ -114,6 +127,7 @@
                         <div class="item"><i class="far fa-circle"></i>مقدمه و تاریخچه اندروید</div>
                         <div class="item"><i class="far fa-circle"></i>ساختار اندروید</div>
                         <div class="item active"><i class="fas fa-circle"></i>المان های اندروید</div>
+                        <div class="item"><i class="far fa-circle"></i>مکانیزم های امنیتی اندروید</div>
                     </div>
                 </section>
                 <section data-background-image="assets/android-components.jpg" data-background-size="55%" data-background-position="bottom 0px left 0px" data-background-opacity="0.95" data-background-transition="zoom">
@@ -160,23 +174,96 @@
                     <div>Manifest یا مرام نامه اطلاعات کلی برنامه را نگهداری میکند</div>
                 </section>
             </section>
+            <section>
+                <section data-background-color="#76D7C4">
+                    <div class="index">
+                        <h3>فهرست</h3>
+                        <div class="item"><i class="far fa-circle"></i>مقدمه و تاریخچه اندروید</div>
+                        <div class="item"><i class="far fa-circle"></i>ساختار اندروید</div>
+                        <div class="item"><i class="far fa-circle"></i>المان های اندروید</div>
+                        <div class="item active"><i class="fas fa-circle"></i>مکانیزم های امنیتی اندروید</div>
+                    </div>
+                </section>
+                <section data-background-color="#E74C3C" data-background-image="assets/android-security.png" data-background-size="40%" data-background-position="bottom 0px left 20px" data-state="notCenter" data-background-transition="zoom">
+                    <div style="margin: 100px;">
+                        <h3>Permissions</h3>
+                        <div class="fragment">برای انجام بسیاری از کار ها در اندروید مثلا گرفتن دیتا از اینترنت یا دسترسی داشتن به فایل های دستگاه باید اجازه داشته باشیم.
+                        </div>
+                        <div class="fragment">این مکانیزم از اندروید ورژن اول وجود داشته است.</div>
+                        <div class="fragment">از اندروید ورژن 6 به بعد این دسترسی ها در حین اجرای برنامه از کاربر گرفته میشود</div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Cryptography</h3>
+                        <div style="text-align: start; margin-right: 50px;">
+                            <div class="fragment">Encrypted File</div>
+                            <div class="fragment">رمز گذاری فایل های بزرگ قبل از ذخیره سازی</div>
+                            <div class="fragment">رمز گشایی فایل های بزرگ قبل از استفاده</div>
+                            <div class="fragment">کلید رمزنگاری با pin یا pattern کاربر رمز شده و در جایی از حافظه نگهداری میشود</div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="fragment" style="position: absolute; right: 0;">
+                        <h3 class="fragment">رمزنگاری متقارن</h3>
+                        <div class="fragment">رمزنگاری و رمزگشایی با یک کلید مشترک</div>
+                        <h3 class="fragment">رمزنگاری نامتقارن</h3>
+                        <div class="fragment">رمزنگاری و رمزگشایی با با دو کلید متفاوت</div>
+                    </div>
+                    <div class="fragment" style="position: absolute; left: 0;">
+                        <img src="assets/encription.jpg" height="480px" width="auto">
+                    </div>
+                </section>
+                <section>
+                    <h3>نگهداری کلید های رمزنگاری ؟</h3>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <img src="assets/android-keystore.jpg">
+                </section>
+                <section data-background-image="assets/danger.png" data-background-size="30%" data-background-position="bottom 0 left 20px">
+                    <div class="fragment">کلید ها در فایل های دستگاه ذخیره میشدند</div>
+                    <div class="fragment">کلید ها hard code میشدند</div>
+                    <div class="fragment">در هر دو حالت امکان به سرقت رفتن کلید ها وجود دارد</div>
+                </section>
+                <section>
+                    <h3>Android Keystore</h3>
+                    <div class="fragment">قبل از اندروید 6 نسخه ساده آن پیاده سازی شده است</div>
+                    <div class="fragment">ورژن 0.2 و 0.3 Keymaster Hardware Abstraction Layer (HAL)</div>
+                    <div class="fragment">امکاناتی مثل امضای دیجیتال و تایید صحت داده ها و تولید جفت کلید های رمزگذاری را داشت</div>
+                    <div class="fragment">بعد از اندروید 6 Keystore تغییرات زیادی در جهت رفع هر چه بهتر نیاز های امنیتی کرد</div>
+                    <div class="fragment">امکان محدود کردن دسترسی به Keystore به آن اضافه شده است</div>
+                    <div class="fragment">امکان رمز نگاری متقارن اضافه شده است</div>
+                </section>
+                <section>
+                    <div style="position: absolute; right: 0; top: 0; width: 50%;">
+                        <h3>Keystore چیست؟ </h3>
+                        <div class="fragment">مکانی برای ذخیره کردن اطلاعات مهم مثل کلید های رمزنگاری و پسورد ها</div>
+                        <div class="fragment">سخت افزار خاص و ایمنی دارد</div>
+                        <div class="fragment">داده های درون keystore به هیچ عنوان نمیتوانند از آن خارج شوند</div>
+                        <div class="fragment">حتی پروسس های کرنل هم نمیتوانند به محتوای آن دسترسی داشته باشند</div>
+                    </div>
+                    <div style="position: absolute; left: 0;"><img src="assets/android-lock.png" width="700px" height="auto"></div>
+                </section>
+            </section>
         </div>
     </div>
 
+    <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
     <script>
         Reveal.initialize({
             history: true,
             controls: true,
             slideNumber: true,
-            navigationMode: 'grid',
             width: "100%",
             height: "100%",
             margin: 0.05,
             minScale: 0.2,
             maxScale: 1.5,
             center: true,
-
         });
 
         Reveal.addEventListener('notCenter', function() {

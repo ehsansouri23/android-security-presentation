@@ -25,6 +25,10 @@ section div {
     margin-top: 2rem;
 }
 
+div h3 {
+    padding-top: 35px;
+}
+
 .index {
     text-align: start;
     font-size: 2rem;
