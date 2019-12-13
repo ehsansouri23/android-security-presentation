@@ -170,7 +170,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section data-state="center">
                     <h3>Broadcast Receiver</h3>
                     <div>مکانیزمی برای انتقال پیام هستند. گاهی اوقات سیستم عامل اندروید پیام هایی را به برنامه میدهد. گاهی اوقات هم برنامه های دیگر نیاز است با هم پیام هایی را رد و بدل کنند. برای این کار از Broadcast receiver استفاده میشود. اینها المان هایی
                         هستند که به پیام های خاصی گوش میدهند.
@@ -201,7 +201,7 @@
                         <div class="fragment">از اندروید ورژن 6 به بعد این دسترسی ها در حین اجرای برنامه از کاربر گرفته میشود</div>
                     </div>
                 </section>
-                <section>
+                <section data-state="center">
                     <div>
                         <h3>Cryptography</h3>
                         <div style="text-align: start; margin-right: 50px;">
@@ -303,6 +303,12 @@
         Reveal.addEventListener('notCenter', function() {
             Reveal.configure({
                 center: false
+            });
+        }, false);
+
+        Reveal.addEventListener('center', function() {
+            Reveal.configure({
+                center: true
             });
         }, false);
     </script>
