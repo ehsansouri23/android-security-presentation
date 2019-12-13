@@ -294,6 +294,10 @@
             minScale: 0.2,
             maxScale: 1.5,
             center: true,
+            dependencies: [{
+                src: 'js/zoom.js',
+                async: true
+            }, ]
         });
 
         Reveal.addEventListener('notCenter', function() {
